@@ -19,7 +19,7 @@ $(".btn").click(function(){
         setTimeout(function(){
             $("#red").removeClass("pressed");
         },100);
-        var red=new Audio("sounds/red.mp3");
+        var red=new Audio("red.mp3");
         red.play();
     } 
     if (choice==="blue"){
@@ -28,7 +28,7 @@ $(".btn").click(function(){
         setTimeout(function(){
             $("#blue").removeClass("pressed");
         },100);
-        var blue=new Audio("sounds/blue.mp3");
+        var blue=new Audio("blue.mp3");
         blue.play();
     }
     if (choice==="green"){
@@ -37,7 +37,7 @@ $(".btn").click(function(){
         setTimeout(function(){
             $("#green").removeClass("pressed");
         },100);
-        var green=new Audio("sounds/green.mp3");
+        var green=new Audio("green.mp3");
         green.play();
     }
     if (choice==="yellow"){
@@ -46,7 +46,7 @@ $(".btn").click(function(){
         setTimeout(function(){
             $("#yellow").removeClass("pressed");
         },100);
-        var yellow=new Audio("sounds/yellow.mp3");
+        var yellow=new Audio("yellow.mp3");
         yellow.play();
     }
     solve(clickedPattern.length-1);
@@ -59,22 +59,22 @@ function sequence(){
     ansPattern.push(colours[num]);
     if (num===0){
         $("#red").fadeOut(100).fadeIn(100);
-        var red=new Audio("sounds/red.mp3");
+        var red=new Audio("red.mp3");
         red.play();
     }
     if (num===1){
         $("#blue").fadeOut(100).fadeIn(100);
-        var blue=new Audio("sounds/blue.mp3");
+        var blue=new Audio("blue.mp3");
         blue.play();
     }
     if (num===2){
         $("#green").fadeOut(100).fadeIn(100);
-        var green=new Audio("sounds/green.mp3");
+        var green=new Audio("green.mp3");
         green.play();
     }
     if (num===3){
         $("#yellow").fadeOut(100).fadeIn(100);
-        var yellow=new Audio("sounds/yellow.mp3");
+        var yellow=new Audio("yellow.mp3");
         yellow.play();
     }
 }
@@ -87,7 +87,7 @@ function solve(x){
         }
     }
     else{
-        var wrong=new Audio("sounds/wrong.mp3");
+        var wrong=new Audio("wrong.mp3");
         wrong.play();
         $("body").addClass("game-over");
         $("h1").text("Game Over! Press Any Key To Restart.");
