@@ -7,9 +7,22 @@ body {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
-  color: #FEF2BF;
+  color: #f8e48d;
 }
-
+#rules{
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+}
+a{
+  color: white;
+}
+h3{
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  padding: 50px 50px 25px 50px;
+}
 .container {
   display: block;
   width: 50%;
